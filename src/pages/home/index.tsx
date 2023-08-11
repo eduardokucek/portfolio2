@@ -44,29 +44,31 @@ export const Home = (): JSX.Element => {
                 width={"48px"}
                 height={"48px"}
               />
-              <Text color="grey4">Hello, my name is Eduardo.</Text>
+              <Text color="grey4">Olá, meu nome é Eduardo.</Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
-              I{" "}
+              Descrubra um pouco do{" "}
               <Text as="span" type="heading1" color="brand1">
-                love
+                universo
               </Text>{" "}
-              creating and{" "}
-              <Text as="span" type="heading1" color="brand1">
+              da programação{" "}
+              {/* <Text as="span" type="heading1" color="brand1">
                 developing
               </Text>{" "}
-              projects
+              projects */}
             </Text>
             <Text type="body1" color="grey2">
-              Discover here in this environment, created especially for you, all
-              my projects and technologies
+              Sou psicólogo de formação e programador de profissão. Entusiasta
+              de tecnologia desde 1985.
+              <br />
+              Conheça meus projetos e tecnologias, e entre em contato comigo!
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
-                See Projects
+                Projetos
               </Button>
               <Button as="a" type="outline" target="_blank" href={portfolioUrl}>
-                See my portfolio source code
+                Portfólio de código fonte
               </Button>
               <Button
                 color="grey5"
@@ -92,12 +94,12 @@ export const Home = (): JSX.Element => {
           <ProjectAreaWrapperColumns>
             <ProjectsAreaSocialMediaMessage>
               <Text as="h2" type="heading4" color="grey4">
-                My projects
+                Meus projetos
               </Text>
               <Text as="p" type="body1" color="grey2">
-                Some of my{" "}
+                Clique no nome do projeto para abrir o deploy <br />
                 <Text as="span" color="brand5">
-                  side projects
+                  ou abra o código fonte do GitHub
                 </Text>
               </Text>
             </ProjectsAreaSocialMediaMessage>
