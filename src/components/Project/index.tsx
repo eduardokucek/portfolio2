@@ -87,7 +87,7 @@ export const Project = (): JSX.Element => {
             </Text>
             <ProjectLinks>
               <ProjectLink target="_blank" href={repository.html_url}>
-                <FaGithub /> Github Code
+                <FaGithub /> Código Github
               </ProjectLink>
 
               {urlProjects.map(
@@ -98,7 +98,7 @@ export const Project = (): JSX.Element => {
                       target="_blank"
                       href={`https://${project.url}`}
                     >
-                      <FaShare /> See demo
+                      <FaShare /> Veja a demo
                     </ProjectLink>
                   )
               )}

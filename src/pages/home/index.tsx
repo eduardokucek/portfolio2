@@ -98,9 +98,9 @@ export const Home = (): JSX.Element => {
                 Meus projetos
               </Text>
               <Text as="p" type="body1" color="grey2">
-                Clique no nome do projeto para abrir o deploy <br />
+                Clique no link para abrir o repositório do GitHub <br />
                 <Text as="span" color="brand5">
-                  ou abra o código fonte do GitHub
+                  ou acesse o link do deploy
                 </Text>
               </Text>
             </ProjectsAreaSocialMediaMessage>

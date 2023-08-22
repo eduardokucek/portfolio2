@@ -33,7 +33,7 @@ export const Contacts = () => {
               <Text type="heading2" color="grey4">
                 Vamos conversar e{" "}
                 <Text as="span" type="heading2" color="brand1">
-                  desenvolver soluções para sua emrpesa
+                  desenvolver soluções para sua empresa
                 </Text>
                 , juntos?
               </Text>
