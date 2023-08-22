@@ -47,7 +47,7 @@ export const Home = (): JSX.Element => {
               <Text color="grey4">Olá, meu nome é Eduardo.</Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
-              Descrubra um pouco do{" "}
+              Descubra um pouco do{" "}
               <Text as="span" type="heading1" color="brand1">
                 universo
               </Text>{" "}
@@ -58,17 +58,18 @@ export const Home = (): JSX.Element => {
               projects */}
             </Text>
             <Text type="body1" color="grey2">
-              Sou psicólogo de formação e programador de profissão. Entusiasta
-              de tecnologia desde 1985.
+              Sou psicólogo de formação e programador de profissão.
               <br />
-              Conheça meus projetos e tecnologias, e entre em contato comigo!
+              Entusiasta da tecnologia desde 1985.
+              <br />
+              Conheça meus projetos e entre em contato comigo!
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
                 Projetos
               </Button>
               <Button as="a" type="outline" target="_blank" href={portfolioUrl}>
-                Portfólio de código fonte
+                Código fonte do portfólio
               </Button>
               <Button
                 color="grey5"

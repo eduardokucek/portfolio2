@@ -24,8 +24,14 @@ interface ReposType {
 export const Project = (): JSX.Element => {
   const [repositories, setRepositories] = useState<ReposType[]>([]);
 
-  const projectNames = ["KenzieHub"];
-  const links = ["kenzie-hub-two-lake.vercel.app"];
+  const urlProjects = [
+    { name: "KenzieHub", url: "kenzie-hub-two-lake.vercel.app" },
+    {
+      name: "BurgerKenzie_v1",
+      url: "burger-kenzie-v1-eduardokucek.vercel.app",
+    },
+    { name: "NuKenzie", url: "nu-kenzie-sand.vercel.app/" },
+  ];
 
   useEffect(() => {
     const fetchData = async () => {
@@ -83,16 +89,19 @@ export const Project = (): JSX.Element => {
               <ProjectLink target="_blank" href={repository.html_url}>
                 <FaGithub /> Github Code
               </ProjectLink>
-              {repository.name == projectNames[0] && (
-                <ProjectLink target="_blank" href={links[0]}>
-                  <FaShare /> See demo
-                </ProjectLink>
+
+              {urlProjects.map(
+                (project) =>
+                  project.name == repository.name && (
+                    <ProjectLink
+                      key={repository.id}
+                      target="_blank"
+                      href={`https://${project.url}`}
+                    >
+                      <FaShare /> See demo
+                    </ProjectLink>
+                  )
               )}
-              {/* {repository.homepage && (
-                <ProjectLink target="_blank" href={repository.homepage}>
-                  <FaShare /> See demo
-                </ProjectLink>
-              )} */}
             </ProjectLinks>
           </ProjectWrapper>
         ))}
